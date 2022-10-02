@@ -12,7 +12,7 @@ Copyright by Oleksandr Kolva
 
 Not implemented additional information like characters, vehicles, planets.
 
-My ideas on how I can implement features
+My ideas on how I can implement features:
 
 <!-- API (https://swapi.dev/api) -->
 
