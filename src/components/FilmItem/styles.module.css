@@ -1,0 +1,27 @@
+.filmElem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+  transition: 0.25s;
+  font-size: 24px;
+}
+
+.filmElem:active {
+  color: white;
+  opacity: 1;
+}
+
+.filmElem:hover {
+  color: white;
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+.elemContainer {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+}
