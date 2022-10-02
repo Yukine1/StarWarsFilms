@@ -30,4 +30,4 @@ API (https://swapi.dev/api)
 
    <!-- ---------------------------------------------------------------------- -->
 3. Make 3 big AJAX requests from API with all I needed information and then use them.
-(I think this is good desicion because better get big amount of information than big amount of requests)
+(I think this is good desicion because better get big amount of information than send big amount of requests)
