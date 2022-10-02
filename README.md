@@ -10,7 +10,7 @@ Copyright by Oleksandr Kolva
 
 ### What now not implemented but in process
 
-Not implemented additiona information like characters, vehicles, planets, because this points has they're own API link.
+Not implemented additional information like characters, vehicles, planets.
 
 My ideas on how I can implement features
 
