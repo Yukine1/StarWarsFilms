@@ -10,12 +10,12 @@
 }
 
 .filmElem:active {
-  color: white;
+  color: #f8f9fa;
   opacity: 1;
 }
 
 .filmElem:hover {
-  color: white;
+  color: #f8f9fa;
   transform: translateY(-3px);
   opacity: 1;
 }

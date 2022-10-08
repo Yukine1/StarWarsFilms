@@ -1,8 +1,7 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { StarWarsContext } from "../../Contexts/StarWarsContext";
 import { FilmDetails } from "./FilmDetails";
 import { useParams } from "react-router-dom";
-import styles from "./styles.module.css";
 
 export const FilmsContainer = () => {
   const { title } = useParams();
@@ -14,7 +13,7 @@ export const FilmsContainer = () => {
   // Return RoutesFilm component which will render if customer click on link
   return (
     <div>
-      <FilmDetails data={selectedFilm}></FilmDetails>
+      <FilmDetails film={selectedFilm}></FilmDetails>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FilmItems } from "./components/Films/FilmItems";
+import { FilmItems } from "./components/Items/FilmItems";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FilmsContainer } from "./components/FilmDetails/FilmsContainer";
 import { StarWarsContext } from "./Contexts/StarWarsContext";
@@ -7,9 +7,11 @@ import classNames from "classnames";
 import styles from "./styles.module.css";
 
 export const App = () => {
-  const [error, setError] = useState(null);
+  const [err, setErr] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [items, setItems] = useState([]);
+  const [films, setFilms] = useState([]);
+
+  // console.log("starShips: ", starShips);
 
   useEffect(() => {
     fetch("https://swapi.dev/api/films/")
@@ -17,27 +19,27 @@ export const App = () => {
       .then(
         (result) => {
           setIsLoaded(true);
-          setItems(result);
+          setFilms(result);
         },
-        (error) => {
+        (err) => {
           setIsLoaded(true);
-          setError(error);
+          setErr(err);
         }
       );
   }, []);
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
+  if (err) {
+    return <div>Error: {err.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div className={styles.loading}>Loading...</div>;
   } else {
     return (
-      <div className={classNames(styles.container, classNames)}>
+      <div className={classNames(styles.wrapper, classNames)}>
         <header className={styles.header}>
           Mobiquity Test Code Assignment
         </header>
         <main className={styles.main}>
-          <StarWarsContext.Provider value={items.results}>
+          <StarWarsContext.Provider value={films.results}>
             <BrowserRouter>
               <Routes>
                 <Route index element={<FilmItems />}></Route>

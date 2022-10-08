@@ -1,0 +1,21 @@
+.peopleContainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+}
+
+.personElement {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personElement:hover {
+  border-right: 4px solid #343a40;
+}
+
+.rowTitle {
+  color: #adb5bd;
+  font-size: 22px;
+}

@@ -1,17 +1,10 @@
 .filmsContainer {
-  height: 900px;
-  width: 800px;
+  width: 1200px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  opacity: 0.2;
-  transition: 1s;
-}
-
-.filmsContainer:hover {
-  opacity: 1;
 }
 
 .title {
@@ -22,7 +15,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  color: white;
+  color: #f8f9fa;
   text-transform: uppercase;
 }
 
@@ -33,4 +26,23 @@
   font-size: 24px;
   letter-spacing: 1px;
   word-spacing: 2px;
+}
+
+.showMore {
+  color: #adb5bd;
+  transition: 0.3s;
+}
+
+.showMore:hover {
+  cursor: pointer;
+  color: #f8f9fa;
+}
+
+.rowTitle {
+  color: #adb5bd;
+}
+
+.newSection {
+  color: #f8f9fa;
+  font-size: 36px;
 }

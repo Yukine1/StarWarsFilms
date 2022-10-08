@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   background-color: #0e0e0e;
-  height: 100vh;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }

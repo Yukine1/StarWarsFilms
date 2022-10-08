@@ -8,7 +8,7 @@ export const FilmItems = () => {
   const filmArr = useContext(StarWarsContext);
 
   return (
-    <div>
+    <div className={styles.filmItems}>
       <div className={styles.pageTitle}>Star Wars Films</div>
       <div className={styles.filmsContainer}>
         <div className={styles.filmsList}>
