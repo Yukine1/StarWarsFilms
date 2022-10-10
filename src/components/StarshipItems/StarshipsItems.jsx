@@ -4,7 +4,7 @@ import { statusCheck } from "../../helper";
 export const StarshipsItems = ({ starships }) => {
   return (
     <div className={styles.starshipsContainer}>
-      {starships.map((starship) => (
+      {starships?.map((starship) => (
         <div className={styles.starshipElement}>
           <p>
             <span className={styles.rowTitle}>Name: </span>

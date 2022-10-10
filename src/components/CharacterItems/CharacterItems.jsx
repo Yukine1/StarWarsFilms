@@ -4,7 +4,7 @@ import { statusCheck } from "../../helper";
 export const CharacterItems = ({ characters }) => {
   return (
     <div className={styles.peopleContainer}>
-      {characters.map((person) => (
+      {characters?.map((person) => (
         <div className={styles.personElement}>
           <p>
             <span className={styles.rowTitle}>Name: </span>
