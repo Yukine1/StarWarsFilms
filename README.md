@@ -30,4 +30,9 @@ API (https://swapi.dev/api)
 
    <!-- ---------------------------------------------------------------------- -->
 3. Make 3 big AJAX requests from API with all I needed information and then use them.
-(I think this is good desicion because better get big amount of information than send big amount of requests)
+(I think this is good desicion because better get big amount of information than send big amount of requests) 
+
+UPDATED:
+3. I understood that this method isn't possible because api didn't store all information on one page, insdead of this 
+api store a peace of information on different pages. So I decided that I make AJAX request for each one page and then 
+concatenate received information to one single array.
